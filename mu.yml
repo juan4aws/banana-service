@@ -1,0 +1,8 @@
+namespace: banana-service-ns
+environments:
+  - name: acceptance
+  - name: production
+service:
+  port: 8080
+  pathPatterns:
+    - /*
