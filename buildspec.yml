@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    JAVA_HOME: "/usr/lib/jvm/java"
+    JAVA_HOME: "/usr/lib/jvm/open-jdk"
     
 phases:
   install:
