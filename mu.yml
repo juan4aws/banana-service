@@ -5,4 +5,10 @@ environments:
 service:
   port: 8080
   pathPatterns:
-    - /*
+    - /bananas
+  pipeline:
+    source:
+      provider: GitHub
+      repo: juan4aws/banana-service
+    build:
+      image: aws/codebuild/java:openjdk-8
