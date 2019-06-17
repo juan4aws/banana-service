@@ -1,8 +1,8 @@
 version: 0.2
 
-env:
-  variables:
-    JAVA_HOME: "/usr/lib/jvm/open-jdk"
+# env:
+#   variables:
+#     JAVA_HOME: "/usr/lib/jvm/open-jdk"
     
 phases:
   install:
@@ -11,11 +11,9 @@ phases:
   build:
     commands:
       - echo '...starting build...'
-      # - ls /usr/lib/
-      # - ls /usr/lib/jvm/
+      - java -version
+      - which java
       - ./gradlew build
-      #- java -version
-      #- which java
 artifacts:
   files:
     - '**/*'
