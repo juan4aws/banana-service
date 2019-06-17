@@ -15,7 +15,3 @@ phases:
 artifacts:
   files:
     - '**/*'
-    
-    
-    
-    "version: 0.2\n\nenv:\n  variables:\n    JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"\n  parameter-store:\n    LOGIN_PASSWORD: /CodeBuild/dockerLoginPassword\n\nphases:\n  install:\n    commands:\n      - apt-get update -y\n      - apt-get install -y maven\n  pre_build:\n    commands:\n      - echo Entered the pre_build phase...\n  build:\n    commands:\n      - echo Build started on `date`\n      - mvn install\n  post_build:\n    commands:\n      - echo Build completed on `date`\nartifacts:\n  files:\n    - target/messageUtil-1.0.jar\n  discard-paths: yes"
