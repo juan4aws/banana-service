@@ -11,9 +11,9 @@ phases:
   build:
     commands:
       - echo '...starting build...'
-      - ls /usr/lib/
-      - ls /usr/lib/jvm/
-      #- ./gradlew build
+      # - ls /usr/lib/
+      # - ls /usr/lib/jvm/
+      - ./gradlew build
       #- java -version
       #- which java
 artifacts:
