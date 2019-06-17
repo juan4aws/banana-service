@@ -11,7 +11,7 @@ phases:
   build:
     commands:
       - echo '...starting build...'
-      # - ./gradlew build
+      - ./gradlew build
 artifacts:
   files:
     - '**/*'
